@@ -1,0 +1,408 @@
+
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+header {
+    background-color: #4b2e2b;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #f5d6a6;
+    font-size: 28px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #f5d6a6;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+    display: inline-block;
+    background-color: #a0522d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #6f3825;
+}
+
+/* =========================
+   Home Page
+========================= */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #6d5148;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* =========================
+   Page Header
+========================= */
+
+.page-header {
+    text-align: center;
+    background-color: #f5e6d3;
+    padding: 60px 20px;
+}
+
+.page-header h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #6d5148;
+}
+
+/* =========================
+   About Page
+========================= */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 8%;
+}
+
+.about-section > div {
+    flex: 1;
+}
+
+.about-section img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+    color: #6d5148;
+}
+
+/* =========================
+   Services Page
+========================= */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 70px 8%;
+}
+
+.service-card {
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #6d5148;
+}
+
+/* =========================
+   Menu Page
+========================= */
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 70px 8%;
+}
+
+.menu-card {
+    background-color: white;
+    padding-bottom: 25px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    font-size: 22px;
+    margin: 20px 10px 10px;
+}
+
+.menu-card p {
+    color: #6d5148;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a0522d;
+}
+
+/* =========================
+   Contact Page
+========================= */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 70px 8%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #6d5148;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6c2b5;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.contact-form .btn {
+    width: 100%;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .page-header h2 {
+        font-size: 30px;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .cards-container,
+    .menu-section {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+}
